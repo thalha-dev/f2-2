@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Library Management</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Library Management system</h1>
+        <form method="post" class="library-form">
+          <div class="form-input">
+            <label for="bookName">Book Name</label>
+            <input type="text" id="bookName" required />
+          </div>
+          <div class="form-input">
+            <label for="bookReader">Issued To</label>
+            <input type="text" id="bookReader" required />
+          </div>
+          <div class="form-input">
+            <input type="submit" id="submit-btn" value="Issue Book" />
+          </div>
+        </form>
+      </div>
+      <div class="table-container">
+        <table id="record-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Book Name</th>
+              <th>Issued To</th>
+              <th>Issue Date and Time</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
